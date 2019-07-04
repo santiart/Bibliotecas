@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1561566309 source:d:\nueva carpeta\parcial2\dominio.c
+	"dominio.h"
+	<stdio.h>
+	<stddef.h>
+	<ctype.h>
+	<string.h>
+
+1561560539 source:d:\nueva carpeta\parcial2\input.c
+	"input.h"
+
+1561560539 d:\nueva carpeta\parcial2\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1561565931 d:\nueva carpeta\parcial2\dominio.h
+	"LinkedList.h"
+	<stdlib.h>
+
+1561566115 d:\nueva carpeta\parcial2\linkedlist.h
+

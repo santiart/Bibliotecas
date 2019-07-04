@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+int esNum(char str[]) ;
+int esSoloLetras(char str[]);
+void getString(char mensaje[],char input[]);
+int getStringLetras(char mensaje[],char input[]);
+int esAlfaNumerico(char mensaje[], char str[]);
+int getStringNumeros(char mensaje[],char input[]);
+int esTelefono(char mensaje[], char str[]);
+int esEmail(char mensaje[], char str[]);

@@ -1,0 +1,327 @@
+# depslib dependency file v1.0
+1561811327 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\autores.c
+	"autores.h"
+	<string.h>
+
+1561809520 c:\users\alumno\desktop\bibliotecas\p parcial labo\autores.h
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1561809520 c:\users\alumno\desktop\bibliotecas\p parcial labo\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1561809520 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\fecha.c
+	"fecha.h"
+
+1561809520 c:\users\alumno\desktop\bibliotecas\p parcial labo\fecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1561809520 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\input.c
+	"input.h"
+
+1561811584 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\libros.c
+	"libros.h"
+
+1561809520 c:\users\alumno\desktop\bibliotecas\p parcial labo\libros.h
+	"autores.h"
+	<stdio.h>
+	<stdlib.h>
+
+1561814752 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\main.c
+	"socios.h"
+	"libros.h"
+	"autores.h"
+	"prestamos.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1561809520 c:\users\alumno\desktop\bibliotecas\p parcial labo\socios.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"input.h"
+
+1561812246 c:\users\alumno\desktop\bibliotecas\p parcial labo\prestamos.h
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"input.h"
+
+1561815378 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\prestamos.c
+	"prestamos.h"
+
+1561809520 source:c:\users\alumno\desktop\bibliotecas\p parcial labo\socios.c
+	"socios.h"
+	"input.h"
+
+1561811327 source:c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\autores.c
+	"autores.h"
+	<string.h>
+
+1561809520 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\autores.h
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1561809520 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1561809520 source:c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\input.c
+	"input.h"
+
+1561811584 source:c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\libros.c
+	"libros.h"
+
+1561809520 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\libros.h
+	"autores.h"
+	<stdio.h>
+	<stdlib.h>
+
+1561815378 source:c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\prestamos.c
+	"prestamos.h"
+
+1561812246 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\prestamos.h
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"input.h"
+
+1561809520 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\socios.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"input.h"
+
+1561809520 c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\fecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1561809520 source:c:\users\alumno\desktop\bibliotecas\aguado santiago 1a\socios.c
+	"socios.h"
+	"input.h"
+
+1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.c
+	"autores.h"
+	<string.h>
+
+1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.h
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.c
+	"input.h"
+
+1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.c
+	"libros.h"
+
+1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.h
+	"autores.h"
+	<stdio.h>
+	<stdlib.h>
+
+1562205907 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\main.c
+	"socios.h"
+	"libros.h"
+	"autores.h"
+	"prestamos.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"input.h"
+
+1562207575 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.h
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"input.h"
+
+1562200484 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.c
+	"prestamos.h"
+
+1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.c
+	"socios.h"
+	"input.h"
+
+1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.c
+	"fecha.h"
+
+1562194196 source:d:\bibliotecas-master\aguado santiago 1a\autores.c
+	"autores.h"
+	<string.h>
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\autores.h
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1562194196 source:d:\bibliotecas-master\aguado santiago 1a\fecha.c
+	"fecha.h"
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\fecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1562194196 source:d:\bibliotecas-master\aguado santiago 1a\input.c
+	"input.h"
+
+1562194196 source:d:\bibliotecas-master\aguado santiago 1a\libros.c
+	"libros.h"
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\libros.h
+	"autores.h"
+	<stdio.h>
+	<stdlib.h>
+
+1562249275 source:d:\bibliotecas-master\aguado santiago 1a\main.c
+	"socios.h"
+	"libros.h"
+	"autores.h"
+	"prestamos.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\socios.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"input.h"
+
+1562194196 d:\bibliotecas-master\aguado santiago 1a\prestamos.h
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"input.h"
+
+1562194196 source:d:\bibliotecas-master\aguado santiago 1a\socios.c
+	"socios.h"
+	"input.h"
+
+1562249351 source:d:\bibliotecas-master\aguado santiago 1a\prestamos.c
+	"prestamos.h"
+
+1562256782 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\autores.c
+	"autores.h"
+	<string.h>
+
+1562256357 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\autores.h
+	"input.h"
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<conio.h>
+
+1562256357 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1562256357 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\fecha.c
+	"fecha.h"
+
+1562256357 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\fecha.h
+	<stdio.h>
+	<stdlib.h>
+
+1562256357 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\input.c
+	"input.h"
+
+1562259048 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\libros.c
+	"libros.h"
+
+1562256357 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\libros.h
+	"autores.h"
+	<stdio.h>
+	<stdlib.h>
+
+1562271786 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\main.c
+	"socios.h"
+	"libros.h"
+	"autores.h"
+	"prestamos.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+
+1562260347 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\socios.h
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	<ctype.h>
+	"fecha.h"
+	"input.h"
+
+1562269333 e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\prestamos.h
+	"socios.h"
+	"autores.h"
+	"libros.h"
+	"input.h"
+
+1562260348 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\socios.c
+	"socios.h"
+	"input.h"
+
+1562271216 source:e:\usuarios\escritorio\bibliotecas\bibliotecas-master\aguado santiago 1a\prestamos.c
+	"prestamos.h"
+
