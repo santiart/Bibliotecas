@@ -15,6 +15,7 @@ void inicializarLibros(eLibros lib[], int tam);
 void mostrarlibro(eLibros lib);
 void mostrarlibros(eLibros vec[], int tam);
 void harcodearLibros(eLibros lista[], int tam);
+void ordenarLibrosPorTitulo(eLibros libros[], int tam);
 
 #endif // Libros_H_INCLUDED
 

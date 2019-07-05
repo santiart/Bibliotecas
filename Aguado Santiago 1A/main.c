@@ -38,9 +38,8 @@ int main()
         printf(" 1_Alta de socio      2_Modificacion de socio  \n");
         printf(" 3_Baja de socio      4_Lista de socios        \n");
         printf(" 5_Lista de libros    6_Lista de Autores       \n");
-        printf(" 7_Ordenar Socios     8_Prestamos              \n");
-        printf(" 9_Mostrar Prestamos  10_Listados              \n");
-        printf(" 11_Salir...                                   \n");
+        printf(" 7_Alta de Prestamo   8_Mostrar Prestamos      \n");
+        printf(" 9_Listados           10_Salir...              \n");
         while(!getStringNumeros("ingrese una opcion: \n", auxOpcion))
         {
             printf("intente de nuevo...\n");
@@ -100,21 +99,7 @@ int main()
             mostrarAutores(listaA,TAM);
             system("pause");
             break;
-
         case 7:
-            if(flag == 1)
-            {
-                ordenarSocios(lista,TAM);
-                system("pause");
-                break;
-            }
-            else
-            {
-                printf("debe hacer al menos un alta de empleado...\n");
-                system("pause");
-                break;
-            }
-        case 8:
             if(flag == 1)
             {
                 for(i = 0; i < TAM; i++)
@@ -134,7 +119,7 @@ int main()
                 system("pause");
                 break;
             }
-        case 9:
+        case 8:
             if(flagP == 1)
             {
                 mostrarPrestamos(listaP, TAM);
@@ -147,19 +132,22 @@ int main()
                 system("pause");
                 break;
             }
-        case 10:
+        case 9:
             if(flag == 1 && flagP == 1)
             {
                 do
                 {
                     system("cls");
-                    printf("                 :: L I S T A D O S::               \n");
-                    printf("1_Listar libros prestados a socios determinado      \n");
-                    printf("2_Listar socios que pidieron un libro determinado   \n");
-                    printf("3_Mostrar socios mas solicitadores                  \n");
-                    printf("4_Mostrar los libros menos solicitados              \n");
-                    printf("5_Listar prestamos en fecha determinada             \n");
-                    printf("6_Salir...                                          \n");
+                    printf("                 :: L I S T A D O S::                     \n");
+                    printf("1_Listar libros prestados a socios determinado            \n");
+                    printf("2_Listar socios que pidieron un libro determinado         \n");
+                    printf("3_Mostrar socios mas solicitadores                        \n");
+                    printf("4_Mostrar los libros menos solicitados                    \n");
+                    printf("5_Listar prestamos en fecha determinada                   \n");
+                    printf("6_Listar la cantidad total y el promedio diario(por mes)  \n");
+                    printf("7_Ordenar socios por apellido(ascendente)                 \n");
+                    printf("8_Ordenar libros por titulo(descendente)                  \n");
+                    printf("9_Salir...                                                \n");
                     while(!getStringNumeros("ingrese una opcion: \n",auxOpcionLista))
                     {
                         printf("intente de nuevo...\n");
@@ -188,6 +176,18 @@ int main()
                             system("pause");
                             break;
                         case 6:
+                            totalGeneralYPromedioDiario(listaP, TAM);
+                            system("pause");
+                            break;
+                        case 7:
+                            ordenarSocios(lista, TAM);
+                            system("pause");
+                            break;
+                        case 8:
+                            ordenarLibrosPorTitulo(listaL,TAM);
+                            system("pause");
+                            break;
+                        case 9:
                             printf("hasta luego...\n");
                             system("pause");
                             break;
@@ -198,7 +198,7 @@ int main()
                             break;
                     }
                 }
-                while(opcionLista != 6);
+                while(opcionLista != 9);
                 break;
             }
             else
@@ -207,7 +207,7 @@ int main()
                 system("pause");
                 break;
             }
-        case 11:
+        case 10:
             printf("\n confirmar salida s/n?...\n");
             fflush(stdin);
             confirmar = getche();

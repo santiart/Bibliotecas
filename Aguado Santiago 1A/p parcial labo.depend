@@ -121,35 +121,35 @@
 	"socios.h"
 	"input.h"
 
-1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.c
+1562338424 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.c
 	"autores.h"
 	<string.h>
 
-1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.h
+1562338424 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\autores.h
 	"input.h"
 	<stdio.h>
 	<stdlib.h>
 	<ctype.h>
 	<conio.h>
 
-1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.h
+1562338424 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 
-1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.c
+1562338424 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\input.c
 	"input.h"
 
-1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.c
+1562362887 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.c
 	"libros.h"
 
-1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.h
+1562361939 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\libros.h
 	"autores.h"
 	<stdio.h>
 	<stdlib.h>
 
-1562205907 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\main.c
+1562362473 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\main.c
 	"socios.h"
 	"libros.h"
 	"autores.h"
@@ -160,7 +160,7 @@
 	<string.h>
 	<ctype.h>
 
-1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.h
+1562361496 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.h
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -169,24 +169,24 @@
 	"fecha.h"
 	"input.h"
 
-1562207575 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.h
+1562338655 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.h
 	"socios.h"
 	"autores.h"
 	"libros.h"
 	"input.h"
 
-1562200484 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.c
+1562357477 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\prestamos.c
 	"prestamos.h"
 
-1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.c
+1562364231 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\socios.c
 	"socios.h"
 	"input.h"
 
-1562182197 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.h
+1562338424 c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.h
 	<stdio.h>
 	<stdlib.h>
 
-1562182197 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.c
+1562338424 source:c:\users\juan\desktop\bibliotecas\aguado santiago 1a\fecha.c
 	"fecha.h"
 
 1562194196 source:d:\bibliotecas-master\aguado santiago 1a\autores.c

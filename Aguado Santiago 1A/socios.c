@@ -23,7 +23,7 @@ void mostrarSocios(eSocios vec[], int tam)
     int i;
     int contadorS = 0;
     printf("\nId    Nombre       Apellido     sexo      email    fecha de Asociado     telefono \n\n");
-    for(i = 0; i < tam; i++)
+    for(i = 1; i < tam; i++)
     {
 
         if(vec[i].estado == 1)
@@ -386,26 +386,23 @@ void bajaSocio(eSocios vec[], int tam)
     }
 }
 
-void ordenarSocios(eSocios vec[], int tam)
+void ordenarSocios(eSocios socios[], int tam)
 {
     int i;
     int j;
     eSocios aux;
-    for(i = 0 ; i < tam - 1  ; i++)
+    for(i = 1 ; i < tam ; i++)
     {
-        for(j = i + 1 ; j < tam  ; j++)
+        aux = socios[i];
+        j = i-1;
+        while((stricmp(socios[j].apellido,aux.apellido) == 1) && (j >= 0))
         {
-
-            if(strcmp(vec[i].apellido, vec[j].apellido)==1)
-            {
-                aux = vec[i];
-                vec[i] = vec[j];
-                vec[j] = aux;
-            }
-
+            socios[j+1] = socios[j];
+            j--;
         }
+        socios[j+1] = aux;
     }
-    printf("\n Orden de socios exitosa!!!, presione la opcion 4 para ver la lista en orden \n\n");
+    printf("\n Orden de socios exitosa!!!, presione la opcion 4 del menu principal para ver la lista en orden \n\n");
 }
 
 int GenerarId()

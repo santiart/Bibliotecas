@@ -198,6 +198,48 @@ int autoIncId()
     return id;
 }
 
+void totalGeneralYPromedioDiario(ePrestamos prestamos[], int tam)
+{
+    int i, cont=0, estaFecha, cant = 0;
+    float promDiario = 0.00;
+    char auxDia[20],auxMes[20],auxAnio[20];
+    while(!getStringNumeros("ingrese el dia del prestamo: \n", auxDia))
+    {
+        printf("intente de nuevo...\n");
+    }
+    while(!getStringNumeros("ingrese el mes del prestamo: \n", auxMes))
+    {
+        printf("intente de nuevo...\n");
+    }
+    while(!getStringNumeros("ingrese el anio del prestamo: \n", auxAnio))
+    {
+        printf("intente de nuevo...\n");
+    }
+    estaFecha = buscaFecha(prestamos, tam, atoi(auxDia),atoi(auxMes),atoi(auxAnio));
+    if(estaFecha == -1)
+    {
+        printf("no se realizaron prestamos en la fecha que ingreso...\n");
+    }
+    else
+    {
+        for(i = 0; i < tam; i++)
+        {
+            if(prestamos[i].estado == 1)
+            {
+                cont++;
+            }
+            if((prestamos[i].estado == 1) && (prestamos[i].dia ==  atoi(auxDia))
+                    && (prestamos[i].mes == atoi(auxMes)) && (prestamos[i].anio == atoi(auxDia)))
+            {
+                cant++;
+            }
+            promDiario =(float) cant/30;// 30 es la cantidad de dias, el promedio sería mensual
+        }
+    }
+    printf("cantidad total de prestamos relizados: %d\n", cont);
+    printf("el promedio diario de los prestamos es: %.3f\n", promDiario);
+}
+
 void mostrarSociosMasSolicitadores(ePrestamos prestamos[], int tamPrestamos)
 {
     int i, socioMas,solicitudPrestamo = 0,contPres;
@@ -209,16 +251,16 @@ void mostrarSociosMasSolicitadores(ePrestamos prestamos[], int tamPrestamos)
         {
             contPres++;
         }
-    }
-    if(i == 0)
-    {
-        socioMas = i;
-        solicitudPrestamo = contPres;
-    }
-    else if(contPres > solicitudPrestamo)
-    {
-        socioMas = i;
-        solicitudPrestamo = contPres;
+        if(i == 0)
+        {
+            socioMas = i;
+            solicitudPrestamo = contPres;
+        }
+        else if(contPres > solicitudPrestamo)
+        {
+            socioMas = i;
+            solicitudPrestamo = contPres;
+        }
     }
     printf("el socio al que mas se le presto es: \n");
     mostrarSocio(prestamos[socioMas].socios);
@@ -235,16 +277,16 @@ void librosMenosSolicitados(ePrestamos prestamos[], int tam)
         {
             contPres++;
         }
-    }
-    if(i == 0)
-    {
-        libroMenos = i;
-        solicitudPrestamo = contPres;
-    }
-    else if(contPres < solicitudPrestamo)
-    {
-        libroMenos = i;
-        solicitudPrestamo = contPres;
+        if(i == 0)
+        {
+            libroMenos = i;
+            solicitudPrestamo = contPres;
+        }
+        else if(contPres < solicitudPrestamo)
+        {
+            libroMenos = i;
+            solicitudPrestamo = contPres;
+        }
     }
     printf("el libro menos solicitado es: \n");
     mostrarlibro(prestamos[libroMenos].libros);

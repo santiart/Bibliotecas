@@ -31,5 +31,5 @@ int buscarSocio(eSocios vec [], int tam, int id);
 void altaSocio(eSocios vec[], int tam);
 void modificarSocio(eSocios vec[], int tam);
 void bajaSocio(eSocios vec[], int tam);
-void ordenarSocios(eSocios vec[], int tam);
+void ordenarSocios(eSocios socios[], int tam);
 #endif // Socios_h_INCLUDED

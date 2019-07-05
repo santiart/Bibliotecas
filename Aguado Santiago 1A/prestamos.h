@@ -23,6 +23,7 @@ int buscarLugarLibre(ePrestamos vec[],int tam);
 int buscarPrestamo(ePrestamos vec [], int tam, int id);
 void altaPrestamos(ePrestamos vec[], int tam);
 int autoIncId();
+void totalGeneralYPromedioDiario(ePrestamos prestamos[], int tam);
 int buscarsocio(ePrestamos vec [], int tam, int id);
 int buscarlibro(ePrestamos vec[], int tam, int id);
 int buscaFecha(ePrestamos prestamos[], int tamPrestamos, int dia, int mes, int anio);

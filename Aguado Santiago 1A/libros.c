@@ -44,3 +44,22 @@ void mostrarlibros(eLibros vec[], int tam)
         printf("\n no hay libros para mostrar \n");
     }
 }
+
+void ordenarLibrosPorTitulo(eLibros libros[], int tam)
+{
+    int i,j;
+    eLibros aux;
+    for(i = 0; i < tam -1; i++)
+    {
+        for(j = i+1; j < tam; j++)
+        {
+            if(((stricmp(libros[i].nombre,libros[j].nombre)<0)) && (libros[i].estado == 1) && (libros[j].estado == 1))
+            {
+                aux = libros[i];
+                libros[i] = libros[j];
+                libros[j] = aux;
+            }
+        }
+    }
+    printf("orden de libros exitosa, ingrese la opcion 5 del menu principal para ver la lista\n");
+}
