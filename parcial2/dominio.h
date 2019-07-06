@@ -11,7 +11,7 @@ typedef struct
 }Dominio;
 
 int dominio_New();
-int dominio_NewParametros(char* idStr, char* anioStr,char* dominioStr,char tipoStr);
+int dominio_NewParametros(char* idStr, char* anioStr,char* dominioStr);
 int dominio_setId(Dominio* this, int id);
 int dominio_getId(Dominio* this, int* id);
 int dominio_setAnio(Dominio* this, int anio);

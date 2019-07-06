@@ -21,3 +21,61 @@
 
 1561566115 d:\nueva carpeta\parcial2\linkedlist.h
 
+1562422352 source:c:\users\alumno\desktop\bibliotecas\parcial2\dominio.c
+	"dominio.h"
+	<stdio.h>
+	<stddef.h>
+	<ctype.h>
+	<string.h>
+
+1562420781 c:\users\alumno\desktop\bibliotecas\parcial2\dominio.h
+	"LinkedList.h"
+	<stdlib.h>
+
+1562424294 c:\users\alumno\desktop\bibliotecas\parcial2\linkedlist.h
+
+1562416992 source:c:\users\alumno\desktop\bibliotecas\parcial2\input.c
+	"input.h"
+
+1562416992 c:\users\alumno\desktop\bibliotecas\parcial2\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+
+1562426379 source:c:\users\alumno\desktop\bibliotecas\parcial2\controller.c
+	"controller.h"
+	<stdio.h>
+	<stdlib.h>
+
+1562426249 c:\users\alumno\desktop\bibliotecas\parcial2\controller.h
+	"LinkedList.h"
+	"dominio.h"
+	"parser.h"
+
+1562425142 source:c:\users\alumno\desktop\bibliotecas\parcial2\linkedlist.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"dominio.h"
+
+1562425962 source:c:\users\alumno\desktop\bibliotecas\parcial2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"controller.h"
+	"input.h"
+
+1562423135 source:c:\users\alumno\desktop\bibliotecas\parcial2\parser.c
+	"parser.h"
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"dominio.h"
+
+1562420952 c:\users\alumno\desktop\bibliotecas\parcial2\parser.h
+	<stdlib.h>
+	<stdio.h>
+	"LinkedList.h"
+

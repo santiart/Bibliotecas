@@ -10,11 +10,9 @@ int dominio_New()
     if(patente != NULL)
     {
         patente->anio = 0;
-        strcpy(" ",patente->dominio);
+        strcpy(patente->dominio, " ");
         patente->id = 0;
-        patente->tipo = ' ';
     }
-
     return patente;
 }
 
@@ -105,7 +103,7 @@ int dominio_getTipo(Dominio* this,char* tipo)
     return retorno;
 }
 
-int dominio_NewParametros(char* idStr, char* anioStr,char* dominioStr,char tipoStr)
+int dominio_NewParametros(char* idStr, char* anioStr,char* dominioStr)
 {
     Dominio* patente = dominio_New();
     int retorno = 1;
@@ -115,12 +113,9 @@ int dominio_NewParametros(char* idStr, char* anioStr,char* dominioStr,char tipoS
         {
             if((dominio_setId(patente,atoi(idStr)))==1)
             {
-                if((dominio_setTipo(patente,tipoStr))==1)
+                if((dominio_setDominio(patente,dominioStr))==1)
                 {
-                    if((dominio_setDominio(patente,dominioStr))==1)
-                    {
-                        retorno = 0;
-                    }
+                    retorno = 0;
                 }
             }
         }

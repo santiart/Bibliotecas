@@ -1,6 +1,8 @@
+#include "LinkedList.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "dominio.h"
 
 static Node* getNode(LinkedList* this, int nodeIndex);
 static int addNode(LinkedList* this, int nodeIndex,void* pElement);
@@ -428,8 +430,7 @@ int ll_contains(LinkedList* this, void* pElement)
 int ll_containsAll(LinkedList* this,LinkedList* this2)
 {
     int returnAux = -1;
-    int tam1;
-    int tam2;
+    int tam1,tam2, i;
     void* pElement;
     int cont = 0;
     tam1 = ll_len(this);
@@ -439,7 +440,7 @@ int ll_containsAll(LinkedList* this,LinkedList* this2)
         returnAux = 0;
         if(tam1 >= tam2)
         {
-            for(int i = 0; i<tam2; i++)
+            for( i = 0; i<tam2; i++)
             {
                 pElement = ll_get(this2,i);
                 if(ll_contains(this2,pElement) == 1)
@@ -470,11 +471,11 @@ LinkedList* ll_subList(LinkedList* this,int from,int to)
 {
     LinkedList* cloneArray = NULL;
     Node* pNode;
-    int newLL = 0;
+    int newLL = 0, i;
     if(this != NULL && from >= 0 && from <= ll_len(this) && to >= 0 && to <= ll_len(this))
     {
         cloneArray = ll_newLinkedList();
-        for(int i = from; i < to; i++)
+        for(i = from; i < to; i++)
         {
             pNode = getNode(this,i);
             if(pNode != NULL)
@@ -557,13 +558,13 @@ int ll_getSize(LinkedList* this)
 int ll_map(LinkedList* this, int(*pFunc)(void*))
 {
     int i, estado = 0, cont = 0;
-    void* Empleado = NULL;
+    Dominio* patente = NULL;
     if(this != NULL)
     {
         for(i = 0; i<ll_len(this);i++)
         {
-            Empleado = ll_get(this,i);
-            if(pFunc(Empleado)== 1)
+            patente = ll_get(this,i);
+            if(pFunc(patente)== 1)
             {
                 cont++;
             }
@@ -575,7 +576,7 @@ int ll_map(LinkedList* this, int(*pFunc)(void*))
     }
     return estado;
 }
-LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void*, void*))
+LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void*))
 {
     int i;
     void* pElement = NULL;

@@ -1,3 +1,4 @@
+#include "parser.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include "LinkedList.h"
@@ -16,7 +17,6 @@ int parser_DominioFromText(FILE* pFile, LinkedList* pArrayPatente)
     char auxId[100];
     char auxDominio[120];
     char auxAnio[120];
-    char auxTipo;
 
     if(pFile == NULL)
     {
@@ -25,16 +25,16 @@ int parser_DominioFromText(FILE* pFile, LinkedList* pArrayPatente)
     }
     else
     {
-        fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",auxId,auxDominio,auxAnio,auxTipo);
+        fscanf(pFile,"%[^,],%[^,],%[^\n]\n",auxId,auxDominio,auxAnio);
         while(!feof(pFile))
         {
-            patente = dominio_New();
+            patente =(Dominio*) dominio_New();
             if(patente !=NULL)
             {
-                fscanf(pFile,"%[^,],%[^,],%[^,],%[^\n]\n",auxId,auxDominio,auxAnio,auxTipo);
-                patente = dominio_NewParametros(auxId,auxAnio,auxDominio,auxTipo);
+                fscanf(pFile,"%[^,],%[^,],%[^\n]\n",auxId,auxDominio,auxAnio);
+                patente =(Dominio*) dominio_NewParametros(auxId,auxAnio,auxDominio);
             }
-            if(pEmp != NULL)
+            if(patente != NULL)
             {
                 ll_add(pArrayPatente,(Dominio*)patente);
                 cont++;
