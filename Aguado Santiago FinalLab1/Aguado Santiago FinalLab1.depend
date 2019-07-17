@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1563369634 source:d:\aguado santiago finallab1\controller.c
+	"controller.h"
+
+1563369168 d:\aguado santiago finallab1\controller.h
+	<stdlib.h>
+	<stdio.h>
+	"Libros.h"
+	"parser.h"
+	"input.h"
+
+1563370620 d:\aguado santiago finallab1\libros.h
+
+1563366502 d:\aguado santiago finallab1\parser.h
+	<stdlib.h>
+	<stdio.h>
+	"LinkedList.h"
+	"Libros.h"
+
+1563367242 d:\aguado santiago finallab1\linkedlist.h
+
+1563363596 d:\aguado santiago finallab1\input.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1563363596 source:d:\aguado santiago finallab1\input.c
+	"input.h"
+
+1563370761 source:d:\aguado santiago finallab1\libros.c
+	"Libros.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1563369407 source:d:\aguado santiago finallab1\linkedlist.c
+	"LinkedList.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1563370506 source:d:\aguado santiago finallab1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"LinkedList.h"
+	"controller.h"
+	"input.h"
+
+1563366482 source:d:\aguado santiago finallab1\parser.c
+	"parser.h"
+
