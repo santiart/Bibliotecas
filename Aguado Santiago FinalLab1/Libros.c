@@ -155,7 +155,7 @@ int Libros_newParametros(char* idStr, char* titulo, char* autor, char* precioStr
         free(nuevoLibro);
         nuevoLibro = NULL;
     }
-    return retorno;
+    return nuevoLibro;
 }
 
 

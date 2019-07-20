@@ -179,7 +179,9 @@ void* ll_get(LinkedList* this, int index)
         {
             returnAux = pNode->pElement;
         }
+
     }
+
     return returnAux;
 }
 
@@ -566,7 +568,7 @@ int ll_map(LinkedList* this, int(*pFunc)(void*))
     return estado;
 }
 
-int queMapea()
+
 LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void*))
 {
     int i;

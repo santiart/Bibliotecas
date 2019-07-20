@@ -14,12 +14,11 @@ int parser_LibrosFromText(FILE* f, LinkedList* arrayList)
         fscanf(f,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n", auxId,auxTitulo,auxAutor, auxPrecio, auxEditId);
         while(!feof(f))
         {
-            libros = Libros_new();
-            if(libros != NULL)
-            {
-                fscanf(f,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n", auxId,auxTitulo,auxAutor, auxPrecio, auxEditId);
-                libros = (Libros*)Libros_newParametros(auxId,auxTitulo,auxAutor,auxPrecio,auxEditId);
-            }
+
+
+            fscanf(f,"%[^,],%[^,],%[^,],%[^,],%[^\n]\n", auxId,auxTitulo,auxAutor, auxPrecio, auxEditId);
+            libros = (Libros*)Libros_newParametros(auxId,auxTitulo,auxAutor,auxPrecio,auxEditId);
+            //printf("%d\n",libros);
             if(libros != NULL)
             {
                 ll_add(arrayList,(Libros*)libros);

@@ -18,7 +18,7 @@ int main()
         printf("1_ cargar en texto\n");
         printf("2_Ordenar por id de la editorial(ascendente)\n");
         printf("3_ listar Libros\n");
-       // printf("4_\n");
+        // printf("4_\n");
         printf("5_Salir...      \n");
         while(!getStringNumeros("ingrese una opcion: \n", auxOPcion))
         {
@@ -27,7 +27,10 @@ int main()
         opcion = atoi(auxOPcion);
         switch(opcion)
         {
-            case 1:
+        case 1:
+            if(flag == 0)
+            {
+
                 printf("ingrese el archivo: \n");
                 scanf("%s",nombreArchivo);
                 archivo = pedirArchivo(nombreArchivo);
@@ -42,47 +45,54 @@ int main()
                     printf("archivo inexistente...\n");
                     break;
                 }
-            case 2:
-                if(flag == 1)
-                {
-                    controller_SortId(nuevaLista);
-                    break;
-                }
-                else
-                {
-                    printf("cargue primero\n");
-                    break;
-                }
-            case 3:
-                if(flag == 1)
-                {
-                    controller_ListLibros(nuevaLista);
-                    break;
-                }
-                else
-                {
-                    printf("debe cargar primero...\n");
-                    break;
-                }
-            case 4:
-                if(flag == 1)
-                {
-                    ll_map(nuevaLista,);
-                    break;
-                }
-                else
-                {
-                    printf("debe cargar primero...\n");
-                    break;
-                }
-            case 5:
-                printf("hasta luego");
+            }
+            else
+            {
+                printf("ya ha realizado una carga...\n");
                 break;
+            }
+        case 2:
+            if(flag == 1)
+            {
+                controller_SortId(nuevaLista);
+                break;
+            }
+            else
+            {
+                printf("cargue primero\n");
+                break;
+            }
+        case 3:
+            if(flag == 1)
+            {
+                controller_ListLibros(nuevaLista);
+                break;
+            }
+            else
+            {
+                printf("debe cargar primero...\n");
+                break;
+            }
+        case 4:
+            if(flag == 1)
+            {
+                //ll_map(nuevaLista,);
+                break;
+            }
+            else
+            {
+                printf("debe cargar primero...\n");
+                break;
+            }
+        case 5:
+            printf("hasta luego");
+            break;
 
         }
         system("pause");
         system("cls");
-    }while(opcion != 5);
+    }
+    while(opcion != 5);
     return 0;
 }
 
