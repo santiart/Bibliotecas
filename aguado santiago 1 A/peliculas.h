@@ -25,3 +25,4 @@ int peliculas_setGenero(ePelicula* this, char* genero);
 int peliculas_getGenero(ePelicula* this, char* genero);
 int peliculas_sortId(void* pVoid1,void* pVoid2);
 int depurarPeliculas(LinkedList* this);
+int filtrarPorGenero(void* void1);

@@ -15,12 +15,14 @@ int main()
     LinkedList* nuevaLista = ll_newLinkedList();
     do
     {
-        printf("alta peliculas...\n");
+        printf(" ::PELICULAS::        \n\n");
         printf("1_ cargar en texto\n");
         printf("2_ listar peliculas\n");
         printf("3_Ordenar por id (descendente)\n");
         printf("4_Depurar peliculas\n");
-        printf("5_Salir...      \n");
+        printf("5_Filtrar pelicula por genero\n");
+        printf("6_filtrar peliculas depuradas\n");
+        printf("7_Salir...      \n");
         while(!getStringNumeros("ingrese una opcion: \n", auxOPcion))
         {
             printf("intente de nuevo...\n");
@@ -28,7 +30,15 @@ int main()
         opcion = atoi(auxOPcion);
         switch(opcion)
         {
-            case 1:
+        case 1:
+            if(flag == 1)
+            {
+                printf("ya se ha hecho la carga...\n");
+                break;
+            }
+            else
+            {
+
                 printf("ingrese el archivo: \n");
                 scanf("%s",nombreArchivo);
                 archivo = pedirArchivo(nombreArchivo);
@@ -43,47 +53,64 @@ int main()
                     printf("archivo inexistente...\n");
                     break;
                 }
-            case 2:
-                if(flag == 1)
-                {
+            }
+        case 2:
+            if(flag == 1)
+            {
                 controller_ListPeliculas(nuevaLista);
                 break;
-                }
-                else
-                {
-                    printf("carge primero\n");
-                    break;
-                }
-            case 3:
-                if(flag == 1)
-                {
-                    controller_SortId(nuevaLista);
-                    break;
-                }
-                else
-                {
-                    printf("debe carghar primero...\n");
-                    break;
-                }
-            case 4:
-                if(flag == 1)
-                {
-                    depurarPeliculas(nuevaLista);
-                    break;
-                }
-                else
-                {
-                    printf("debe carghar primero...\n");
-                    break;
-                }
-            case 5:
-                printf("hasta luego");
+            }
+            else
+            {
+                printf("cargue primero\n");
                 break;
+            }
+        case 3:
+            if(flag == 1)
+            {
+                controller_SortId(nuevaLista);
+                break;
+            }
+            else
+            {
+                printf("debe cargar primero...\n");
+                break;
+            }
+        case 4:
+            if(flag == 1)
+            {
+                depurarPeliculas(nuevaLista);
+                break;
+            }
+            else
+            {
+                printf("debe cargar primero...\n");
+                break;
+            }
+        case 5:
+            if(flag == 1)
+            {
+                ll_filter(nuevaLista, filtrarPorGenero);
+                break;
+            }
+            else
+            {
+                printf("debe cargar primero...\n");
+                break;
+            }
+        /*
+        case 6:
+        break;
+        */
+        case 7:
+            printf("hasta luego\n");
+            break;
 
         }
         system("pause");
         system("cls");
-    }while(opcion != 5);
+    }
+    while(opcion != 7);
     return 0;
 }
 

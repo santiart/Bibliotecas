@@ -579,6 +579,8 @@ LinkedList* ll_filter(LinkedList* this, int(*pFunc)(void*))
             {
                 ll_add(new_List,pElement);
             }
+
+            printf(pElement);
         }
     }
     return new_List;
